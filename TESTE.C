@@ -3,7 +3,7 @@
 
 int main() {
 
-int opcao, agencia, conta, sair, agencia2, conta2;
+int opcao, agencia, conta, agencia2, conta2;
 float saldo = 300, deposito, saque;
 
 
@@ -13,7 +13,6 @@ printf("Bem-vindo ao sistema bancário!\n");
     printf("Digite o número da sua conta: ");
     scanf("%d", &conta);
 printf(" \n\n");
-
 
 printf("1. Consultar saldo\n");
 printf("2. Realizar depósito\n");
@@ -50,7 +49,7 @@ case 2:
     printf("3. Realizar saque\n");
     printf("4. Sair\n");
     printf("Selecione uma opção: ");
-    scanf("%d", &opcao, &sair);
+    scanf("%d", &opcao);
     break;
 case 3:
  printf("Sua agência é: %d, sua conta: %d, saldo: %.2f. Deseja realizar qual o valor de saque: ", agencia, conta, saldo);
